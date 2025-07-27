@@ -13,7 +13,8 @@ h1 {
   color: darkblue;
 }
 
-img {
+/* Make the image selector more specific to avoid affecting the aside image */
+main img {
   width: 150px;
   height: auto;
   border: 1px solid black;
@@ -21,6 +22,36 @@ img {
   box-shadow: 0 0 30px gray;
 }
 
+/* Style the image inside the aside */
+aside img {
+  width: 200px;
+  height: auto;
+}
+
+/* Set a maximum width for the main content */
+main {
+  max-width: 840px;
+}
+
+/* Style the aside element */
+aside {
+  width: 20rem;
+  margin: 1rem;
+  border: 1px solid rgb(0 0 0 / 0.2); /* subtle transparent border */
+  padding: 1rem;
+  background-color: #eee;
+  color: #333;
+  text-align: center;
+}
+
+/* Set paragraph padding to 0 */
 p {
-  padding: 10px;
+  padding: 0;
+}
+
+/* Style the footer */
+footer {
+  margin-top: 1rem;
+  border-top: 1px solid #ccc;
+  text-align: center;
 }
