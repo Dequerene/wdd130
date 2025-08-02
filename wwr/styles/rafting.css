@@ -68,6 +68,7 @@ nav, p, section, article {
   display: block;
   width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 /* Overlay Heading */
