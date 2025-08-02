@@ -1,11 +1,29 @@
 /* ========== CSS Variables ========== */
 :root {
-  --primary-color: #055a05;         /* forest green */
+  --primary-color: #a5dcba;         /* forest green */
   --secondary-color: #f4a261;       /* warm sand */
   --accent1-color: #264653;         /* dark slate blue */
   --accent2-color: #e9c46a;         /* light golden yellow */
   --heading-font: 'Merriweather Sans', sans-serif;
-  --body-font: 'Lato', sans-serif;
+  --body-font: 'Roboto', sans-serif;
+}
+
+/* ========== Reset ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ========== Base Styles ========== */
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+}
+
+header, main, footer {
+  max-width: 840px;
+  margin: 0 auto;
 }
 
 header {
@@ -13,21 +31,6 @@ header {
   color: var(--accent2-color);
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-    font-family: var(--body-font);
-    color: var(--accent1-color);
-}
-
-header,main, footer {
-    width: 840px;
-    margin: o auto;
-}
 /* ========== Typography ========== */
 h1, h2 {
   font-family: var(--heading-font);
@@ -39,9 +42,11 @@ nav, p, section, article {
   margin: 16px;
   padding: 8px;
 }
+
 /* ========== Social Media ========== */
 .socialmedia {
   margin-top: 10px;
+  text-align: left;
 }
 
 .socialmedia a {
@@ -53,6 +58,7 @@ nav, p, section, article {
   width: 32px;
   height: 32px;
 }
+
 /* ========== Hero Section ========== */
 .hero {
   position: relative;
@@ -76,9 +82,19 @@ nav, p, section, article {
   color: #fff;
 }
 
-/* Hero Article Image */
+/* Hero Article Positioned Absolutely */
+.hero article {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 12px;
+  max-width: 300px;
+}
+
+/* Hero Article Image Floated Right */
 .hero article img {
   float: right;
   width: 125px;
+  margin-left: 10px;
 }
-
