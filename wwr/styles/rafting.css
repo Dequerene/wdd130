@@ -20,6 +20,16 @@ body {
   font-family: var(--body-font);
   color: var(--accent1-color);
   background-color: #fff;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--accent1-color);
+}
+
+p, li, a, span {
+  font-family: var(--body-font);
 }
 
 header, main, footer {
@@ -130,11 +140,37 @@ nav a:hover {
 .adventures figure {
   flex: 1 1 150px;
   margin: 10px;
+  border: 2px solid var(--accent2-color);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.adventures figure:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 .adventures img {
   width: 100%;
   height: auto;
+}
+
+/* ========== Buttons ========== */
+button {
+  font-family: var(--body-font);
+  font-weight: bold;
+  background-color: var(--secondary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--accent2-color);
 }
 
 /* ========== Footer ========== */
@@ -159,4 +195,28 @@ footer .socialmedia img {
 
 footer .socialmedia img:hover {
   transform: scale(1.1);
+}
+
+footer a {
+  color: var(--accent1-color);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--secondary-color);
+}
+
+/* ========== Responsive Hero Section ========== */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.5rem;
+    padding: 8px;
+  }
+
+  .hero article {
+    max-width: 90%;
+    bottom: 10px;
+    right: 10px;
+  }
 }
