@@ -1,10 +1,10 @@
 /* ========== CSS Variables ========== */
 :root {
-  --primary-color: #a5dcba;         /* forest green */
-  --secondary-color: #f4a261;       /* warm sand */
-  --accent1-color: #264653;         /* dark slate blue */
-  --accent2-color: #e9c46a;         /* light golden yellow */
-  --heading-font: 'Merriweather Sans', sans-serif;
+  --primary-color: #a5dcba;
+  --secondary-color: #f4a261;
+  --accent1-color: #264653;
+  --accent2-color: #e9c46a;
+  --heading-font: 'Merriweather', serif;
   --body-font: 'Roboto', sans-serif;
 }
 
@@ -19,44 +19,48 @@
 body {
   font-family: var(--body-font);
   color: var(--accent1-color);
+  background-color: #fff;
 }
 
 header, main, footer {
-  max-width: 840px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
+/* ========== Header Layout ========== */
 header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
   background-color: var(--primary-color);
-  color: var(--accent2-color);
+  color: var(--accent1-color);
+  padding: 10px;
 }
 
-/* ========== Typography ========== */
-h1, h2 {
+header img {
+  max-height: 60px;
+}
+
+header h1 {
   font-family: var(--heading-font);
-  color: var(--primary-color);
+  font-size: 1.8rem;
+  text-align: center;
 }
 
-/* ========== Spacing for Content Elements ========== */
-nav, p, section, article {
-  margin: 16px;
-  padding: 8px;
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
 }
 
-/* ========== Social Media ========== */
-.socialmedia {
-  margin-top: 10px;
-  text-align: left;
-}
-
-.socialmedia a {
+nav a {
+  color: var(--accent1-color);
+  font-weight: bold;
   text-decoration: none;
-  margin: 0 20px;
 }
 
-.socialmedia img {
-  width: 32px;
-  height: 32px;
+nav a:hover {
+  color: var(--secondary-color);
 }
 
 /* ========== Hero Section ========== */
@@ -68,34 +72,91 @@ nav, p, section, article {
   display: block;
   width: 100%;
   height: auto;
-  object-fit: cover;
 }
 
-/* Overlay Heading */
 .hero h1 {
   position: absolute;
   top: 20px;
   width: 100%;
-  padding: 16px;
   text-align: center;
-  opacity: 0.7;
-  background-color: var(--accent1-color);
+  background-color: rgba(38, 70, 83, 0.85);
   color: #fff;
+  padding: 10px;
+  font-size: 2rem;
 }
 
-/* Hero Article Positioned Absolutely */
 .hero article {
   position: absolute;
-  top: 20px;
+  bottom: 20px;
   right: 20px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 12px;
   max-width: 300px;
 }
 
-/* Hero Article Image Floated Right */
 .hero article img {
   float: right;
   width: 125px;
   margin-left: 10px;
+}
+
+/* ========== History Section ========== */
+.history {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 1rem;
+  align-items: center;
+  margin: 20px;
+}
+
+.history h2 {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+.history img {
+  max-width: 200px;
+}
+
+/* ========== Adventures Section ========== */
+.adventures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  margin: 20px;
+}
+
+.adventures figure {
+  flex: 1 1 150px;
+  margin: 10px;
+}
+
+.adventures img {
+  width: 100%;
+  height: auto;
+}
+
+/* ========== Footer ========== */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 10px;
+}
+
+footer .socialmedia {
+  display: flex;
+  gap: 10px;
+}
+
+footer .socialmedia img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease;
+}
+
+footer .socialmedia img:hover {
+  transform: scale(1.1);
 }
