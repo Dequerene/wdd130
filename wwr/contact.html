@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Get in touch with Utah White Water Rafting for questions, reservations, or website suggestions." />
+  <meta name="author" content="Osvaldo João" />
+  <title>Contact Us | Utah White Water Rafting</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/rafting.css" />
+</head>
+
+<body>
+  <!-- Header and Navigation -->
+  <header>
+    <img src="images/wwr-logo.png" alt="Utah White Water Rafting company logo" />
+    <h1>Utah White Water Rafting</h1>
+    <nav>
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Company Information -->
+    <section class="company-info">
+      <h2>Contact Information</h2>
+      <p>Address: 123 Utah River Rd, Utah, USA</p>
+      <p>Phone: +1 (801) 555-1234</p>
+      <p>Email: info@utahrafting.com</p>
+      <!-- Embedded Google Map -->
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=YOUR_MAP_EMBED_LINK_HERE" 
+        width="600" 
+        height="450" 
+        allowfullscreen="" 
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </section>
+
+    <!-- Employee Profiles -->
+    <section class="employees">
+      <h2>Meet Our Team</h2>
+      <figure>
+        <img src="images/employee1.jpg" alt="Happy guide John" />
+        <figcaption>John – Lead Guide</figcaption>
+      </figure>
+      <figure>
+        <img src="images/employee2.jpg" alt="Happy guide Sarah" />
+        <figcaption>Sarah – Safety Officer</figcaption>
+      </figure>
+      <figure>
+        <img src="images/employee3.jpg" alt="Happy guide Mike" />
+        <figcaption>Mike – Trip Coordinator</figcaption>
+      </figure>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <p>Purpose of Message:</p>
+        <input type="radio" id="general" name="purpose" value="General Inquiry" required />
+        <label for="general">General Inquiry</label><br />
+        <input type="radio" id="reservation" name="purpose" value="Reservation Question" />
+        <label for="reservation">Reservation Question</label><br />
+        <input type="radio" id="suggestion" name="purpose" value="Website Suggestion" />
+        <label for="suggestion">Website Suggestion</label>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <input type="checkbox" id="subscribe" name="subscribe" />
+        <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Utah White Water Rafting | Osvaldo João</p>
+    <nav class="socialmedia" aria-label="Social media links">
+      <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+        <img src="images/facebook.webp" alt="Facebook page for Utah White Water Rafting" />
+      </a>
+      <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+        <img src="images/twitter.webp" alt="Twitter profile for Utah White Water Rafting" />
+      </a>
+      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+        <img src="images/instagram.webp" alt="Instagram page for Utah White Water Rafting" />
+      </a>
+    </nav>
+    <!-- Link para o wireframe -->
+    <p><a href="images/contact-wireframe.png" target="_blank">View Contact Us Wireframe</a></p>
+  </footer>
+</body>
+</html>
