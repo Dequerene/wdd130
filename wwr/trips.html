@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Explore Utah White Water Rafting trips—from family floats to advanced rapids. Compare durations, difficulty, and prices, then book your adventure." />
+  <meta name="author" content="Osvaldo João" />
+  <title>Trips | Utah White Water Rafting</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/rafting.css" />
+</head>
+
+<body>
+  <!-- Header & Navigation (same across site) -->
+  <header>
+    <img src="images/wwr-logo.png" alt="Utah White Water Rafting company logo" />
+    <h1>Utah White Water Rafting</h1>
+    <nav>
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="trips.html" aria-current="page">Trips</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- CTA banner to Contact page -->
+    <section class="cta trips-cta">
+      <h2>Questions or Ready to Book?</h2>
+      <p>Our team will help you pick the perfect trip for your skill level and schedule.</p>
+      <a class="btn" href="contact.html">Contact Us</a>
+    </section>
+
+    <!-- Trip cards (grid, not single-column) -->
+    <section class="trips-grid" aria-labelledby="trips-heading">
+      <h2 id="trips-heading">Featured Rafting Trips</h2>
+
+      <article class="trip">
+        <img src="images/trip-family-float.jpg" alt="Smiling family rafting a calm section of river">
+        <div class="trip-body">
+          <h3>Family Fun Float</h3>
+          <p>Perfect for beginners and kids. A scenic half-day float with gentle Class I–II rapids, riverside snacks, and plenty of photo stops.</p>
+          <ul class="trip-meta">
+            <li><strong>Duration:</strong> Half Day (4 hrs)</li>
+            <li><strong>Difficulty:</strong> Easy (I–II)</li>
+            <li><strong>Season:</strong> May–September</li>
+            <li><strong>Price:</strong> $90 / person</li>
+          </ul>
+          <a class="btn" href="contact.html">Book Family Fun</a>
+        </div>
+      </article>
+
+      <article class="trip">
+        <img src="images/trip-canyon-run.jpg" alt="Raft crew navigating moderate rapids through a red-rock canyon">
+        <div class="trip-body">
+          <h3>Canyon Run</h3>
+          <p>Our most popular full-day adventure. Enjoy steady Class II–III rapids, a riverside picnic lunch, and sweeping canyon vistas.</p>
+          <ul class="trip-meta">
+            <li><strong>Duration:</strong> 1 Day (7–8 hrs)</li>
+            <li><strong>Difficulty:</strong> Moderate (II–III)</li>
+            <li><strong>Season:</strong> April–October</li>
+            <li><strong>Price:</strong> $120 / person</li>
+          </ul>
+          <a class="btn" href="contact.html">Book Canyon Run</a>
+        </div>
+      </article>
+
+      <article class="trip">
+        <img src="images/trip-rapids-rush.jpg" alt="Advanced rafters charging through crashing white water">
+        <div class="trip-body">
+          <h3>Rapids Rush</h3>
+          <p>Two days of adrenaline on pushy Class III–IV water. Includes pro guides, camp gear, meals, and unforgettable starry nights.</p>
+          <ul class="trip-meta">
+            <li><strong>Duration:</strong> 2 Days / 1 Night</li>
+            <li><strong>Difficulty:</strong> Hard (III–IV)</li>
+            <li><strong>Season:</strong> June–August</li>
+            <li><strong>Price:</strong> $250 / person</li>
+          </ul>
+          <a class="btn" href="contact.html">Book Rapids Rush</a>
+        </div>
+      </article>
+
+      <!-- Optional 4th card to strengthen layout -->
+      <article class="trip">
+        <img src="images/trip-sunset-float.jpg" alt="Golden-hour rafting with warm sunset light on the river">
+        <div class="trip-body">
+          <h3>Sunset Float</h3>
+          <p>A tranquil evening float ideal for couples and photographers. Calm water, golden light, and a toast at take-out.</p>
+          <ul class="trip-meta">
+            <li><strong>Duration:</strong> 2.5 hrs (evening)</li>
+            <li><strong>Difficulty:</strong> Easy (I–II)</li>
+            <li><strong>Season:</strong> May–September</li>
+            <li><strong>Price:</strong> $80 / person</li>
+          </ul>
+          <a class="btn" href="contact.html">Book Sunset Float</a>
+        </div>
+      </article>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="trip-table" aria-labelledby="compare-heading">
+      <h2 id="compare-heading">Compare All Trips</h2>
+      <table>
+        <caption class="sr-only">Comparison of rafting trips by duration, difficulty, season, and price</caption>
+        <thead>
+          <tr>
+            <th scope="col">Trip</th>
+            <th scope="col">Duration</th>
+            <th scope="col">Difficulty</th>
+            <th scope="col">Season</th>
+            <th scope="col">Price (USD)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Family Fun Float</td>
+            <td>Half Day</td>
+            <td>Easy (I–II)</td>
+            <td>May–Sep</td>
+            <td>$90</td>
+          </tr>
+          <tr>
+            <td>Canyon Run</td>
+            <td>Full Day</td>
+            <td>Moderate (II–III)</td>
+            <td>Apr–Oct</td>
+            <td>$120</td>
+          </tr>
+          <tr>
+            <td>Rapids Rush</td>
+            <td>2 Days / 1 Night</td>
+            <td>Hard (III–IV)</td>
+            <td>Jun–Aug</td>
+            <td>$250</td>
+          </tr>
+          <tr>
+            <td>Sunset Float</td>
+            <td>~2.5 hrs</td>
+            <td>Easy (I–II)</td>
+            <td>May–Sep</td>
+            <td>$80</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="table-note">Prices include gear and certified guides. Taxes and park fees may apply.</p>
+    </section>
+
+    <!-- Secondary CTA -->
+    <section class="cta trips-cta-bottom">
+      <h2>Still deciding?</h2>
+      <p>Tell us your experience level and dates—we’ll recommend the best fit.</p>
+      <a class="btn" href="contact.html">Talk to a Guide</a>
+    </section>
+  </main>
+
+  <!-- Footer (same across site) -->
+  <footer>
+    <p>&copy; 2025 Utah White Water Rafting | Osvaldo João</p>
+    <nav class="socialmedia" aria-label="Social media links">
+      <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+        <img src="images/facebook.webp" alt="Facebook logo" />
+      </a>
+      <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+        <img src="images/twitter.webp" alt="Twitter logo" />
+      </a>
+      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+        <img src="images/instagram.webp" alt="Instagram logo" />
+      </a>
+    </nav>
+    <!-- Trips wireframe link (Trips page only) -->
+    <p><a href="images/trips-wireframe.png" target="_blank">View Trips Page Wireframe</a></p>
+  </footer>
+</body>
+</html>
